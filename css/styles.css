@@ -173,7 +173,7 @@ button {
     padding-top: 200px;
     padding-bottom: 200px;
 }
-.overlay {
+.hero-overlay {
     max-width: 1600px;
     height: 600;
     margin-left: auto;
@@ -594,6 +594,40 @@ transition: fill var(--anima-fast);
     border: 1px solid var(--border-color);
 
     transition: box-shadow var(--anima-fast);
+}
+.group-thumb {
+    position: relative;
+    overflow: hidden;
+        
+}
+
+.group-iteam-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+    
+    width: 100%;
+    height: 294;
+    padding: 63px 24px; 
+
+    background: rgba(33, 150, 243, 0.9);
+
+    transition: transform var(--anima-fast);
+    
+}
+.text-overlay {
+    margin: 0;
+   
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-color); 
+}
+.group-iteam:hover .group-iteam-overlay {
+    transform: translateY(0);
 }
 .group-iteam:not(:nth-child(3n)) {
     margin-right: 30px;
