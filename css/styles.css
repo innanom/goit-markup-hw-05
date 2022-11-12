@@ -15,6 +15,8 @@
     /* Fonts */
     --main-font: Roboto;
     --logo-font: Raleway;
+
+    --anima-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -100,6 +102,10 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition: color var(--anima-fast);
+
+    
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -118,11 +124,15 @@ button {
     display: flex;
     justify-content: center;
     gap: 10px;
-    color: var(--primary-text-color);
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+
+    transition: color var(--anima-fast);
 }
 
 .envelope-icon,
@@ -158,24 +168,20 @@ button {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    
-    color: var(--primary-color);
+        
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
+    color: var(--primary-color);
+
      
 }
 .hero-button {
     padding: 10px 32px;
     
-    color: var(--primary-color);
-    background:var(--accent-color) ;
-    box-shadow: 0px 4px 4px var(--color-shadow-hero-button);
-    border-radius: 4px;
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -183,6 +189,11 @@ button {
     align-items: center;   
     letter-spacing: 0.06em;
     cursor: pointer;
+
+    color: var(--primary-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px var(--color-shadow-hero-button);
+    border-radius: 4px;
 }
 
 
@@ -196,12 +207,12 @@ button {
     margin-top: 0;
     margin-bottom: 50px;
 
-    color: var(--primary-heading-color);
-
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+    color: var(--primary-heading-color);
 }
 
 
@@ -248,19 +259,22 @@ button {
     margin-top: 0;
     margin-bottom: 10px;
 
-    color: var(--primary-heading-color);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em; 
     text-transform: uppercase;
+
+    color: var(--primary-heading-color);
 }
 .text {
     margin-top: 0;
     margin-bottom: 0;
-    color: var(--primary-text-color);
+    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
 }
 
 /* What are we doing? */
@@ -282,6 +296,7 @@ button {
 
     width: 100%;
     padding: 27px;
+
     background: rgba(47, 48, 58, 0.8);
 }
 .label-text {
@@ -316,11 +331,11 @@ button {
     margin-top: 0;
     margin-bottom: 16px;
 
-    color: var(--primary-text-color);
-
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
 }
 .cards{
     padding-top: 30px;
@@ -331,11 +346,12 @@ button {
     margin-top: 0;
     margin-bottom: 10px;
     
-    color: var(--primary-heading-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    color: var(--primary-heading-color);
  }
  /* Socials */
  .socials {
@@ -353,6 +369,10 @@ button {
     border-radius: 50%;
 
     color: var(--primary-color);
+
+    transition: babackground 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -391,10 +411,14 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 170px;
     height: 92px;
+
     border: 1px solid var(--main-icons-color);
     border-radius: 4px;
+
+    transition: border-color var(--anima-fast);
 }
 .client-company:hover, 
 .client-company:focus {
@@ -403,6 +427,8 @@ button {
 
 .logo-icon {
 fill: var(--main-icons-color);
+
+transition: fill var(--anima-fast);
 }
 .client-company:hover .logo-icon,
 .client-company:focus .logo-icon{
@@ -416,12 +442,15 @@ fill: var(--main-icons-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;  
+
+    transition: color var(--anima-fast);
 }
 .ft-logo {
     margin-bottom: 20px;
 }
 .contact-list {
     width: 231px;
+
 }
 .contact-list:not(:last-child) {
     margin-bottom: 9px;
@@ -475,15 +504,16 @@ fill: var(--main-icons-color);
     align-items: center;
     width: 44px;
     height: 44px;
+
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     
-
+    transition: background var(--anima-fast);
     
  }
  .ft-socials-icon {
      fill: var(--primary-color);
- }
+}
 
  .ft-socials-link:hover,
  .ft-socials-link:focus {
@@ -491,11 +521,6 @@ fill: var(--main-icons-color);
  }
 
  
-
- .ft-socials-link:hover,
- .ft-socials-link:focus {
-     fill: var(--accent-color);
- }
 
 /* Portfolio */
 .project {
@@ -519,8 +544,6 @@ fill: var(--main-icons-color);
     padding: 6px 22px;
     border-radius: 4px;
        
-    color: var(--primary-heading-color); 
-
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -529,6 +552,10 @@ fill: var(--main-icons-color);
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+
+    color: var(--primary-heading-color);
+
+    transition: background var(--anima-fast), box-shadow var(--anima-fast), color var(--anima-fast);
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -545,6 +572,8 @@ fill: var(--main-icons-color);
     width: 370px;
     background: var(--primary-color);
     border: 1px solid var(--border-color);
+
+    transition: box-shadow var(--anima-fast);
 }
 .group-iteam:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -564,19 +593,19 @@ fill: var(--main-icons-color);
     margin-top: 0;
     margin-bottom: 4px;
 
-    color: var(--primary-heading-color);
-
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    color: var(--primary-heading-color);
 }
 .group-text {
     margin-top: 0;
     margin-bottom: 0;
-        
-    color: var(--primary-text-color);
-
+    
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
 }
